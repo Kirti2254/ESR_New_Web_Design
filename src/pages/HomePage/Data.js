@@ -1,16 +1,16 @@
-export const homeObjOne = {
+ export const homeObjOne = {
   primary: true,
   lightBg: false,
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Marketing Agency',
-  headline: 'Lead Generation Specialist for Online Businesses',
+  // topLine: 'Marketing Agency',
+  headline: 'We Build Technology Based Solution',
   description:
-    'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+    'With lots of unique blocks,you can easily build a page without coding. Build your next website fast.',
   buttonLabel: 'Get Started',
   imgStart: '',
-  img: require('../../images/svg-1.svg'),
+  img: require('../../images/Image.png'),
   alt: 'Credit Card',
   start: ''
 };
@@ -27,7 +27,7 @@ export const homeObjTwo = {
     "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
   buttonLabel: 'Learn More',
   imgStart: '',
-  img: require('../../images/svg-2.svg'),
+  img: require('../../images/Image.png'),
   alt: 'Vault',
   start: ''
 };
@@ -45,7 +45,7 @@ export const homeObjThree = {
     "Their team is wonderful! I can't believe I didn't start working with them earlier.",
   buttonLabel: 'View Case Study',
   imgStart: 'start',
-  img: require('../../images/profile.jpg'),
+  img: require('../../images/Image.png'),
   alt: 'Vault',
   start: 'true'
 };
@@ -62,7 +62,7 @@ export const homeObjFour = {
     'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
   buttonLabel: 'Sign Up Now',
   imgStart: 'start',
-  img: require('../../images/svg-3.svg'),
+  img: require('../../images/Image.png'),
   alt: 'Vault',
   start: 'true'
 };

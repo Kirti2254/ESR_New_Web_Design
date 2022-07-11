@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
-  background: #101522;
+  background: none;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: black;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -33,9 +33,9 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)`
-  margin-right: 0.5rem;
-`;
+// export const NavIcon = styled(FaMagento)`
+//   margin-right: 0.5rem;
+// `;
 
 export const MobileIcon = styled.div`
   display: none;
@@ -48,6 +48,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: black !important;
   }
 `;
 
@@ -67,7 +68,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: white;
   }
 `;
 
@@ -99,7 +100,7 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;

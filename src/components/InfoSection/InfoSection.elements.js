@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+  background: ${({ lightBg }) => (lightBg ? '#000' : 'white')};
 `;
 
 export const InfoRow = styled.div`
@@ -46,14 +46,14 @@ export const ImgWrapper = styled.div`
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
-export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
-`;
+// export const TopLine = styled.div`
+//   color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
+//   font-size: 18px;
+//   line-height: 16px;
+//   font-weight: 700;
+//   letter-spacing: 1.4px;
+//   margin-bottom: 16px;
+// `;
 
 export const Img = styled.img`
   padding-right: 0;
@@ -69,7 +69,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+  color: ${({ lightText }) => (lightText ? '#000' : '#fff')};
 `;
 
 export const Subtitle = styled.p`
@@ -77,5 +77,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? '#000' : '#808080')};
 `;

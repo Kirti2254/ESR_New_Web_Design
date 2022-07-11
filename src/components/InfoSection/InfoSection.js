@@ -16,7 +16,7 @@ import {
 function InfoSection({
   primary,
   lightBg,
-  topLine,
+  // topLine,
   lightTopLine,
   lightText,
   lightTextDesc,
@@ -35,10 +35,10 @@ function InfoSection({
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                {/* <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine> */}
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to='/sign-up'>
+                <Link to='/lets-talk'>
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>

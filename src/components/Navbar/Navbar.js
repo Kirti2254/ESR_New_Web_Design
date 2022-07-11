@@ -6,7 +6,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  NavIcon,
+  // NavIcon,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -14,6 +14,7 @@ import {
   NavLinks,
   NavBtnLink
 } from './Navbar.elements';
+import "./index.css"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -42,11 +43,11 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-              <NavIcon />
-              ULTRA
+              {/* <NavIcon /> */}
+              ESR TECH
             </NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? <FaTimes className='svg-icon'/> : <FaBars className='svg-icon'/>}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
@@ -55,24 +56,36 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/services' onClick={closeMobileMenu}>
-                  Services
+                <NavLinks to='/about' onClick={closeMobileMenu}>
+                 About
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/products' onClick={closeMobileMenu}>
-                  Products
+                <NavLinks to='/service'onClick={closeMobileMenu}>
+                  Service
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to='/portfolio' onClick={closeMobileMenu}>
+                  Portfolio
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to='/blog' onClick={closeMobileMenu}>
+                  Blog
                 </NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/sign-up'>
-                    <Button primary>SIGN UP</Button>
+                  <NavBtnLink to='/lets-talk'>
+                    <Button primary>Let's Talk</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to='/sign-up'>
                     <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
+                      Let's Talk
                     </Button>
                   </NavBtnLink>
                 )}
